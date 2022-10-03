@@ -4,7 +4,8 @@
   "description": "mohammed sohail",
   "main": "index.js",
   "scripts": {
-    "test": "test jest"
+    "test": "test jest",
+    "prepare": "husky install"
   },
   "author": "mohammed sohail",
   "license": "ISC",
@@ -16,5 +17,11 @@
   "dependencies": {
     "jest": "^29.1.2",
     "prettier": "^2.7.1"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint",
+      "prettier --write ."
+    ]
   }
 }
